@@ -25,7 +25,7 @@ And you're done! Your website will be live at: `<yourusername>.github.io/moonris
 
 ## License
 
-See [LICENSE.md](license.md)
+See [LICENSE.md](LICENSE.md)
 
 
 ## Contributing
