@@ -18,17 +18,17 @@ Demo: https://coffeebank.github.io/moonrise
 
 ## Getting Started
 
-The quickest way to get up and running is to use your GitHub account.
+The quickest way to get up and running is to use GitHub Pages (free).
 
 1. Click "Use this template" on the top right corner
-1. Go to the [`media`](media) folder and [replace the two `android-chrome-...`, `apple-touch-...`, and `favicon.ico`](https://favicon.io/favicon-converter/) with [your own logo](https://unsplash.com)
+1. Go to the [`media`](media) folder and [replace `favicon.ico`, `apple-touch-...`, and the two `android-chrome-...`](https://favicon.io/favicon-converter/) with [your own logo](https://unsplash.com)
 1. Invite [Widgetbot](https://widgetbot.io) into your Discord server, and [get your Server ID and Channel ID](https://www.youtube.com/watch?v=6dqYctHmazc) to show on your website
 1. Go back to the main folder and edit [`index.md`](index.md) with your information
 1. Go into your repo's Settings and publish to Github Pages
 
-And you're done! Your website will be live at: `<yourusername>.github.io/moonrise`
+And you're done! Your website will be live at: `<yourusername>.github.io/<repositoryname>`
 
-[If you already have a domain, continue here.](https://help.github.com/en/github/working-with-github-pages/about-custom-domains-and-github-pages)
+[Set a custom domain](https://help.github.com/en/github/working-with-github-pages/about-custom-domains-and-github-pages) or [download to selfhost](https://github.com/coffeebank/moonrise/archive/master.zip) ([needs Jekyll](https://jekyllrb.com))
 
 
 ## License
