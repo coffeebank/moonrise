@@ -3,10 +3,12 @@ layout: landing
 
 
 # Set this website's info
-siteURL: https://coffeebank.github.io/moonrise # change "coffeebank" to your GitHub username
+# Change "coffeebank" to your GitHub username
+# Change "moonrise" to your repository username
+siteURL: https://coffeebank.github.io/moonrise
 siteIcon: media/android-chrome-192x192.png
 siteYear: 2020
-siteFooterlink: https://github.com/coffeebank/moonrise # change "coffeebank" to your GitHub username
+siteFooterlink: https://github.com/coffeebank/moonrise
 showinSearchEngines: true
 
 

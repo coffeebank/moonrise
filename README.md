@@ -20,7 +20,7 @@ Demo: https://coffeebank.github.io/moonrise
 
 The quickest way to get up and running is to use your GitHub account.
 
-1. Fork the repo
+1. Click "Use this template" on the top right corner
 1. Go to the [`media`](media) folder and [replace the two `android-chrome-...`, `apple-touch-...`, and `favicon.ico`](https://favicon.io/favicon-converter/) with [your own logo](https://unsplash.com)
 1. Invite [Widgetbot](https://widgetbot.io) into your Discord server, and [get your Server ID and Channel ID](https://www.youtube.com/watch?v=6dqYctHmazc) to show on your website
 1. Go back to the main folder and edit [`index.md`](index.md) with your information
