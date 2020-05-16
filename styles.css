@@ -1,5 +1,6 @@
 :root {
     --lightcolor: #efefef;
+    --green-900: #22543d;
 }
 
 html {
@@ -67,3 +68,35 @@ body {
         height: 400px;
     }
 }
+
+#snackbar {
+    visibility: hidden;
+    min-width: 8em;
+    margin-left: -4em;
+    text-align: center;
+    position: fixed;
+    z-index: 30;
+    left: 50%;
+    bottom: 30px;
+}
+    #snackbar.show {
+        visibility: visible;
+        -webkit-animation: fadein 0.5s, fadeout 0.5s 2s;
+        animation: fadein 0.5s, fadeout 0.5s 2s;
+    }
+    @-webkit-keyframes fadein {
+        from {bottom: 0; opacity: 0;} 
+        to {bottom: 30px; opacity: 1;}
+    }
+    @keyframes fadein {
+        from {bottom: 0; opacity: 0;}
+        to {bottom: 30px; opacity: 1;}
+    }
+    @-webkit-keyframes fadeout {
+        from {bottom: 30px; opacity: 1;} 
+        to {bottom: 0; opacity: 0;}
+    }
+    @keyframes fadeout {
+        from {bottom: 30px; opacity: 1;}
+        to {bottom: 0; opacity: 0;}
+    }

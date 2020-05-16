@@ -45,15 +45,18 @@
                     </a>
                 {% endfor %}
           </div>
-          <div id="serverStatus" class="text-gray-200 hidden md:block cursor-pointer">
-            Loading...
-          </div>
+          <div id="serverStatus" class="text-gray-200 hidden md:block cursor-pointer"></div>
         </div>
         <div class="block md:hidden">
-            <div id="serverStatusM" class="text-gray-200 py-2 md:py-4">
-              Loading...
-            </div>
+            <div id="serverStatusM" class="text-gray-200 py-2 md:py-4"></div>
         </div>
+
+        <!-- show loading for status API only if javascript is enabled -->
+        <script>
+          document.getElementById('serverStatus').innerHTML = `Loading...`
+          document.getElementById('serverStatusM').innerHTML = `Loading...`
+        </script>
+
     </nav>
 
     <!-- lead section -->
@@ -67,7 +70,7 @@
                     <div class="text-sm font-thin -mb-3" id="serverPlaynow">
                         <span class="inline-block bg-yellow-500 rounded-full px-3 py-1 text-sm font-thin uppercase text-gray-900 mr-2 shadow-lg">Play Now</span>
                     </div>
-                    <p class="text-gray-100 text-base bg-green-900 rounded py-6 px-3 sm:text-xl md:text-2xl font-mono overflow-hidden shadow-xl select-all" id="serverIP">
+                    <p class="text-gray-100 text-base bg-green-900 rounded py-6 px-3 sm:text-xl md:text-2xl font-mono overflow-hidden shadow-xl select-all" id="serverIP" data-clipboard-text="{{ page.serverIP }}">
                         {{ page.serverIP }}
                     </p>
                 </div>
@@ -139,6 +142,25 @@
                 document.getElementById("serverIP").classList.add('bg-orange-800');
             }
         })
+    </script>
+
+    <!-- set up clipboardjs and snackbar confirmation -->
+    <script src="clipboard.min.js"></script>
+    <div id="snackbar" class="text-gray-100 bg-green-900 p-3 rounded shadow-xl">Copied!</div>
+    <script>
+        new ClipboardJS('p#serverIP');
+        var clipboard = new ClipboardJS('p#serverIP');
+        var getsnack = document.getElementById("snackbar");
+
+        clipboard.on('success', function(e) {
+            getsnack.classList.add('show');
+            setTimeout(function(){ getsnack.classList.remove('show'); }, 2500);
+        });
+
+        clipboard.on('error', function(e) {
+            console.error('Action:', e.action);
+            console.error('Trigger:', e.trigger);
+        });
     </script>
 </body>
 </html>

@@ -8,7 +8,7 @@ Features:
 - Shows the server's Minecraft Java version automatically
 - Shows a channel from your Discord server on the homepage
 - Changes color when Minecraft server is detected to be offline
-- Select server IP on website with one click
+- Click to copy server IP
 - Screenshots modal popup (coming soon)
 - Progressive Web App (coming soon)
 
@@ -50,6 +50,7 @@ The scope of this project is to be a landing page.
 - https://widgetbot.io/
 
 #### Assets
+- https://clipboardjs.com/
 - https://fonts.google.com/specimen/Jost
 - https://www.gradientmagic.com/
 - https://jekyllrb.com/
@@ -68,3 +69,4 @@ The scope of this project is to be a landing page.
 #### Inspiration
 - https://www.tjvantoll.com/2015/09/13/fetch-and-errors/
 - https://www.w3schools.com/howto/howto_css_animate_buttons.asp
+- https://www.w3schools.com/howto/howto_js_snackbar.asp
