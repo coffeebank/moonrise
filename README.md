@@ -2,7 +2,15 @@
 
 # Moonrise
 
-A simple, lightweight, responsive landing page for a Minecraft server with Discord integration. Server status indicators with visual updates when server goes offline. Discord server embed for displaying an information channel or adding live social chat for your guild. Free website hosting on GitHub Pages.
+A simple, lightweight, responsive landing page template for a Minecraft server. Integrates with Discord, Minecraft server status, and GitHub Pages to host a free website.
+
+Features:
+- Shows the server's Minecraft Java version automatically
+- Shows a channel from your Discord server on the homepage
+- Changes color when Minecraft server is detected to be offline
+- Select server IP on website with one click
+- Screenshots modal popup (coming soon)
+- Progressive Web App (coming soon)
 
 Demo: https://coffeebank.github.io/moonrise
 
