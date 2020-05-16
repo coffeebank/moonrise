@@ -28,7 +28,7 @@ The quickest way to get up and running is to use GitHub Pages (free).
 
 And you're done! Your website will be live at: `<yourusername>.github.io/<repositoryname>`
 
-[Set a custom domain](https://help.github.com/en/github/working-with-github-pages/about-custom-domains-and-github-pages) or [download to selfhost](https://github.com/coffeebank/moonrise/archive/master.zip) ([needs Jekyll](https://jekyllrb.com))
+Advanced: [Set a custom domain](https://help.github.com/en/github/working-with-github-pages/about-custom-domains-and-github-pages) or [download to selfhost](https://github.com/coffeebank/moonrise/archive/master.zip) ([needs Jekyll](https://jekyllrb.com))
 
 
 ## License
