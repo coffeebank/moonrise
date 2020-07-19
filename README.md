@@ -1,4 +1,4 @@
-![Moonrise logo](media/favicon.ico) 
+![Moonrise logo](docs/media/favicon.ico) 
 
 # Moonrise
 
@@ -14,7 +14,7 @@ Features:
 
 Demo: https://coffeebank.github.io/moonrise
 
-![CrispBuild demo](media/demo01.jpg)
+![CrispBuild demo](docs/media/demo01.jpg)
 
 ## Getting Started
 
