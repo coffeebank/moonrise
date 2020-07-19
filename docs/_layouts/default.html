@@ -71,19 +71,21 @@ layout: compress
         <div id="serverStatus" class="text-gray-200 hidden md:block cursor-pointer"></div>
         {% endif %}
 
-        <!-- only show mobile status if no siteNav -->
+        
         {% if site.siteNav %}
         {% else %}
+            <!-- only show mobile status if no siteNav -->
             <div class="block md:hidden">
                 <div id="serverStatusM" class="text-gray-200 py-2 md:py-4"></div>
             </div>
+
+            <!-- show loading for status API only if javascript is enabled -->
+            <script>
+            document.getElementById("serverStatus").innerHTML = "Loading..."
+            document.getElementById("serverStatusM").innerHTML = "Loading..."
+            </script>
         {% endif %}
 
-        <!-- show loading for status API only if javascript is enabled -->
-        <script>
-          document.getElementById("serverStatus").innerHTML = "Loading..."
-          document.getElementById("serverStatusM").innerHTML = "Loading..."
-        </script>
 
     </nav>
 
