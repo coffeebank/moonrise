@@ -1,0 +1,40 @@
+---
+---
+
+:root {
+    --text-color: #eee;
+    --text-light: #ccc;
+}
+
+.layoutpage {
+    color: var(--text-color);
+    width: 95%;
+    max-width: 1200px;
+    font-size: 1.1rem;
+
+    h1,h2,h3 {
+        padding-top: 1rem;
+    }
+
+    p {
+        padding-bottom: 1rem;
+    }
+
+    a {
+        color: var(--text-light);
+        
+        &:hover {
+            color: var(--text-color);
+        }
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        line-height: 5rem;
+        font-weight: bold;
+    }
+
+    .toc {
+        
+    }
+}

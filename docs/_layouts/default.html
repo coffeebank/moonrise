@@ -1,0 +1,108 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site.serverName }}</title>
+    <meta name="description" content="{{ site.serverDescription }}">
+    <link rel="shortcut icon" href="{{ site.baseurl }}/media/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/media/apple-touch-icon.png">
+
+    <!-- don't show this site on search engines -->
+    {% if site.showinSearchEngines == true %}
+        <meta name="robots" content="index">
+    {% else %}
+        <meta name="robots" content="noindex">
+    {% endif %}
+
+    <!-- css and fonts -->
+    <link href="{{ site.baseurl }}/assets/styles.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- set chrome and embed site color -->
+    <meta name="theme-color" content="#272727">
+
+    <!-- social media -->
+    <meta property="og:title" content="{{ site.serverName }} - Minecraft Server">
+    <meta property="og:description" content="{{ site.serverDescription }}">
+    <meta property="og:image" content="{{ site.siteIcon }}">
+    <meta property="og:url" content="{{ site.siteURL }}">
+
+</head>
+<body style="min-height:100vh;">
+    <!-- navbar -->
+    <nav class="flex items-center justify-between flex-wrap bg-transparent p-6">
+        <a href="{{ site.baseurl }}/">
+            <div class="flex items-center flex-shrink-0 text-white mr-6 select-none">
+                <img src="{{ site.baseurl }}/{{ site.siteIcon }}" class="mr-4 rounded shadow" width="30px" alt="{{ site.serverName }}">
+                <span class="font-semibold text-xl tracking-tight hidden md:block" id="serverLogoName">{{ site.serverName }}</span>
+                {% if site.siteNav %}
+                    <div class="text-transparent select-none px-0 md:px-4 pb-1">
+                        <div id="serverInd">&#11044;</div>
+                    </div>
+                {% endif %}
+            </div>
+        </a>
+        <div class="block flex-grow flex items-center w-auto">
+            
+            {% if site.siteNav %}
+                <div class="text-base flex-grow text-right pb-1 lg:pb-0">
+                    <!-- Home link only on lg -->
+                    <a href="{{ site.baseurl }}/" rel="noopener" class="hidden lg:block lg:inline-block {% if page.navname == "Home" %}text-white{% else %}text-teal-200 hover:text-white{% endif %} mr-4">
+                        Home
+                    </a>
+                    {% for nlink in site.siteNav %}
+                        <a href="{{ site.baseurl }}/{{ nlink.nurl }}" rel="noopener" class="block inline-block {% if page.navname == nlink.nname %}text-white{% else %}text-teal-200 hover:text-white{% endif %} mr-4">
+                            {{ nlink.nname }}
+                        </a>
+                    {% endfor %}
+                </div>
+            {% endif %}
+
+        </div>
+        
+        <!-- show status if no siteNav -->
+        {% if site.siteNav %}{% else %}
+        <div id="serverStatus" class="text-gray-200 hidden md:block cursor-pointer"></div>
+        {% endif %}
+
+        <!-- only show mobile status if no siteNav -->
+        {% if site.siteNav %}
+        {% else %}
+            <div class="block md:hidden">
+                <div id="serverStatusM" class="text-gray-200 py-2 md:py-4"></div>
+            </div>
+        {% endif %}
+
+        <!-- show loading for status API only if javascript is enabled -->
+        <script>
+          document.getElementById("serverStatus").innerHTML = "Loading..."
+          document.getElementById("serverStatusM").innerHTML = "Loading..."
+        </script>
+
+    </nav>
+
+    {{ content }}
+
+    <div class="w-full pb-8 text-center">
+        <a href="{% if site.siteFooterlink %}{{ site.siteFooterlink }}{% elsif site.siteURL %}{{ site.siteURL }}{% else %}https://github.com/coffeebank/moonrise{% endif %}" rel="noopener" style="color:#888;" title="Legal">&copy; {{ site.siteYear }}<script>new Date().getFullYear()>{{ site.siteYear }}&&document.write("&#8208;"+new Date().getFullYear());</script> {{ site.serverName }}</a>
+    </div>
+
+    {% if page.navname == "Home" %}
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/serverstatus-home.js"></script>
+    {% else %}
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/serverstatus.js"></script>
+    {% endif %}
+
+    <!-- set up clipboardjs and snackbar confirmation -->
+    <script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
+    <div id="snackbar" class="text-gray-100 bg-green-900 p-3 rounded shadow-xl">Copied!</div>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/clipboard.js"></script>
+
+</body>
+</html>

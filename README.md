@@ -18,17 +18,22 @@ Demo: https://coffeebank.github.io/moonrise
 
 ## Getting Started
 
+**Simple:**
+
 The quickest way to get up and running is to use GitHub Pages (free).
 
 1. Click "Use this template" on the top right corner
-1. Go to the [`media`](media) folder and [replace `favicon.ico`, `apple-touch-...`, and the two `android-chrome-...`](https://favicon.io/favicon-converter/) with [your own logo](https://unsplash.com)
 1. Invite [Widgetbot](https://widgetbot.io) into your Discord server, and [get your Server ID and Channel ID](https://www.youtube.com/watch?v=6dqYctHmazc) to show on your website
-1. Go back to the main folder and edit [`index.md`](index.md) with your information
+1. [`docs`](docs) folder: [edit `_config.yml`](_config.yml) with your information
+1. [`docs`](docs) folder: [edit `index.md`](index.md) with your own images and links
 1. Go into your repo's Settings and publish to Github Pages
 
 And you're done! Your website will be live at: `<yourusername>.github.io/<repositoryname>`
 
-Advanced: [Set a custom domain](https://help.github.com/en/github/working-with-github-pages/about-custom-domains-and-github-pages) or [download to selfhost](https://github.com/coffeebank/moonrise/archive/master.zip) ([needs Jekyll](https://jekyllrb.com))
+**Customizing Further:**
+- [`docs/media`](docs/media) folder: [replace `favicon.ico`, `apple-touch-...`, and the two `android-chrome-...`](https://favicon.io/favicon-converter/) with [your own logo](https://unsplash.com)
+- [`docs`](docs) folder: [update `_config.yml`](_config.yml) with siteNav links to use extra pages
+- [Set a custom domain](https://help.github.com/en/github/working-with-github-pages/about-custom-domains-and-github-pages) or [download to selfhost](https://github.com/coffeebank/moonrise/archive/master.zip) ([needs Jekyll](https://jekyllrb.com))
 
 
 ## License
@@ -38,9 +43,7 @@ See [LICENSE.md](LICENSE.md)
 
 ## Contributing
 
-The layout used for the homepage is under `_layouts/landing.html`.
-
-The scope of this project is to be a landing page.
+Code cleanup is welcome! Feel free to fork the project and make improvements.
 
 
 ## Attributions
@@ -52,6 +55,7 @@ The scope of this project is to be a landing page.
 #### Assets
 - https://clipboardjs.com/
 - https://fonts.google.com/specimen/Jost
+- https://github.com/penibelst/jekyll-compress-html
 - https://www.gradientmagic.com/
 - https://jekyllrb.com/
 - https://tailwindcss.com/

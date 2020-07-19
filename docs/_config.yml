@@ -1,0 +1,55 @@
+# Set this website's info
+# Change "coffeebank" to your GitHub username
+# Change "moonrise" to your repository name
+url: "https://coffeebank.github.io"
+baseurl: "/moonrise"
+siteIcon: media/android-chrome-192x192.png
+siteYear: 2020
+siteFooterlink: https://github.com/coffeebank/moonrise
+showinSearchEngines: true
+
+
+# Set basic server info
+serverName: Moonrise MC
+serverDescription: A Minecraft server where we have lots of fun!
+serverIP: 79.46.31.53:3498
+
+
+# Discord information
+discordInvite: https://discord.gg/minecraft
+discordServerID: 299881420891881473
+discordChannelID: 450428756855750666
+
+
+# Navbar Links at the top of the page
+# Uncomment this section to add page functionality!
+# siteNav:
+#   - nname: Player Guide
+#     nurl: guide
+#   - nname: About
+#     nurl: about
+
+
+# Build settings
+theme: minima
+# plugins:
+#   - jekyll-feed
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

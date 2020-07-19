@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+<!-- lead section -->
+<div class="flex flex-wrap md:flex-row-reverse justify-center items-center text-center py-4">
+    <div class="w-full lg:w-1/2">
+        <h1 class="text-4xl text-gray-100 pt-12 lg:pt-0">{{ site.serverName }}</h1>
+        <h2 class="text-2xl text-gray-200 pt-6" id="serverVer">Minecraft Server</h2>
+
+        <div class="rounded overflow-hidden w-full sm:w-4/5 md:w-3/4 mx-auto mt-10 mb-6">
+            <div class="px-6 py-4">
+                <div class="text-sm font-thin -mb-3" id="serverPlaynow">
+                    <span class="inline-block bg-yellow-500 rounded-full px-3 py-1 text-sm font-thin uppercase text-gray-900 mr-2 shadow-lg">Play Now</span>
+                </div>
+                <p class="text-gray-100 text-base bg-green-900 rounded py-6 px-3 sm:text-xl md:text-2xl font-mono overflow-hidden shadow-xl select-all" id="serverIP" data-clipboard-text="{{ site.serverIP }}">
+                    {{ site.serverIP }}
+                </p>
+            </div>
+        </div>
+        
+        <a href="{{ site.discordInvite }}" rel="noopener">
+            <button class="w-4/5 md:w-1/2 xl:w-1/3 mb-2 bg-gray-800 hover:bg-teal-800 text-gray-300 hover:text-gray py-3 px-4 text-lg rounded transition duration-200 ccdiscordjoinpre">
+                <span class="ccdiscordjoin">Join our Discord</span>
+            </button>
+        </a>
+    </div>
+    <div class="w-full sm:w-3/5 md:w-1/2">
+        <iframe src="https://e.widgetbot.io/channels/{{ site.discordServerID }}/{{ site.discordChannelID }}" class="ccinfoframe mx-auto my-12 lg:float-right xl:mr-8 rounded-lg shadow-xl" title="{{ site.serverName }} Discord embed" style="background-color:#36393f;"></iframe>
+    </div>
+</div>
+
+<div id="sites" class="flex flex-wrap w-full justify-center items-center sm:w-5/6 md:w-11/12 xl:w-4/5 pb-16 lg:py-16 sm:mx-auto">
+    {% for clink in page.cellLinks %}
+        <div class="w-full lg:w-1/3">
+            <a href="{% if clink.curl %}{{ clink.curl }}{% else %}#top{% endif %}" rel="noopener"{% if clink.other %} {{ clink.other }}{% endif %}>
+                <div class="w-11/12 my-1 mx-auto md:my-2 h-40 lg:h-64 rounded-lg bg-gray-700 overflow-hidden shadow-xl cbsitehover2 relative cursor-pointer fade-in-fwd">
+                    <div class="bg-center bg-cover absolute cbsitehover" style="background-image: url('{{ clink.cimage }}');">
+                    </div>
+                    <div class="px-4 py-2 w-full h-full bottom-0 bg-transparent cursor-default pointer-events-none absolute z-10">
+                        <div class="absolute" style="top:50%;left:50%;transform:translate(-50%, -50%);">
+                            <button class="w-auto bg-gray-800 text-gray-300 hover:text-gray py-3 px-6 text-lg rounded">
+                                <span>{{ clink.cname }}</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    {% endfor %}
+</div>

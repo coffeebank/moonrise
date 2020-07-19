@@ -13,6 +13,10 @@ body {
     font-family: 'Jost', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+a {
+    transition: all 0.2s ease;
+}
+
 .cbsitehover {
     height: 100%;
     width: 100%;
