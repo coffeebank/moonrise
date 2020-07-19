@@ -26,7 +26,7 @@ The quickest way to get up and running is to use GitHub Pages (free).
 1. Invite [Widgetbot](https://widgetbot.io) into your Discord server, and [get your Server ID and Channel ID](https://www.youtube.com/watch?v=6dqYctHmazc) to show on your website
 1. [`docs`](docs) folder: [edit `_config.yml`](_config.yml) with your information
 1. [`docs`](docs) folder: [edit `index.md`](index.md) with your own images and links
-1. Go into your repo's Settings and publish to Github Pages
+1. Go into your repo's Settings and publish to Github Pages from `master branch /docs folder`
 
 And you're done! Your website will be live at: `<yourusername>.github.io/<repositoryname>`
 
