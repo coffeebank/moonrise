@@ -68,5 +68,12 @@
         li {
             padding-bottom: 0.5rem;
         }
+
+        ol, ul {
+            padding-top: 0.5rem;
+            padding-bottom: 0px;
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+        }
     }
 }
