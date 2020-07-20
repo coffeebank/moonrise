@@ -13,7 +13,8 @@
     font-size: 1.1rem;
 
     h1,h2,h3 {
-        padding-top: 1rem;
+        padding-top: 2.5rem;
+        padding-bottom: 1rem;
     }
 
     p {
@@ -30,7 +31,25 @@
 
     h1 {
         font-size: 2.5rem;
-        line-height: 5rem;
+        line-height: 3.5rem;
         font-weight: bold;
+    }
+
+    ul {
+        list-style-type: disc;
+    }
+    
+    ol {
+        list-style-type: decimal;
+    }
+
+    ol, ul {
+        margin: 0;
+        padding: 1rem 2.5rem;
+        list-style-position: outside;
+
+        li {
+            padding-bottom: 0.5rem;
+        }
     }
 }
