@@ -13,7 +13,6 @@
     font-size: 1.1rem;
 
     h1,h2,h3 {
-        padding-top: 2.5rem;
         padding-bottom: 1rem;
     }
 
@@ -32,7 +31,25 @@
     h1 {
         font-size: 2.5rem;
         line-height: 3.5rem;
+        padding-top: 2.5rem;
         font-weight: bold;
+    }
+
+    h2 {
+        font-size: 2rem;
+        padding-top: 1.5rem;
+        font-weight: bold;
+    }
+
+    h3 {
+        font-size: 1.65rem;
+        padding-top: 1.5rem;
+        font-weight: bold;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+        padding-top: 1.5rem;
     }
 
     ul {
