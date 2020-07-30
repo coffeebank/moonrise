@@ -33,7 +33,7 @@ layout: default
 <div id="sites" class="flex flex-wrap w-full justify-center items-center sm:w-5/6 md:w-11/12 xl:w-4/5 pb-16 lg:py-16 sm:mx-auto">
     {% for clink in page.cellLinks %}
         <div class="w-full lg:w-1/3">
-            <a href="{% if clink.curl %}{{ clink.curl }}{% else %}#top{% endif %}" rel="noopener"{% if clink.other %} {{ clink.other }}{% endif %}>
+            <a href="{% if clink.curl %}{{ clink.curl }}{% else %}#top{% endif %}"{% if clink.cnewtab == true %} target="_blank" rel="noopener"{% endif %}{% if clink.other %} {{ clink.other }}{% endif %}>
                 <div class="w-11/12 my-1 mx-auto md:my-2 h-40 lg:h-64 rounded-lg bg-gray-700 overflow-hidden shadow-xl cbsitehover2 relative cursor-pointer fade-in-fwd">
                     <div class="bg-center bg-cover absolute cbsitehover" style="background-image: url('{{ clink.cimage }}');">
                     </div>
