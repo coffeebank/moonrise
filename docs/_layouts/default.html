@@ -106,5 +106,18 @@ layout: compress
     <div id="snackbar" class="text-gray-100 bg-green-900 p-3 rounded shadow-xl">Copied!</div>
     <script type="text/javascript" src="{{ site.baseurl }}/assets/clipboard.js"></script>
 
+    <!-- Google Analytics -->
+    {% if googleAnalyticsID %}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ googleAnalyticsID }}"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '{{ googleAnalyticsID }}');
+    </script>
+    {% endif %}
+
 </body>
 </html>
