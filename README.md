@@ -12,6 +12,10 @@ Features:
 - Screenshots modal popup (coming soon)
 - Progressive Web App (coming soon)
 
+<br />
+
+[![Support Discord](https://img.shields.io/badge/Support%20Discord-▸-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://coffeebank.github.io/discord)
+
 Demo: https://coffeebank.github.io/moonrise
 
 ![CrispBuild demo](docs/media/demo01.jpg)
@@ -24,15 +28,15 @@ The quickest way to get up and running is to use GitHub Pages (free).
 
 1. Click "Use this template" on the top right corner
 1. Invite [Widgetbot](https://widgetbot.io) into your Discord server, and [get your Server ID and Channel ID](https://www.youtube.com/watch?v=6dqYctHmazc) to show on your website
-1. [`docs`](docs) folder: [edit `_config.yml`](_config.yml) with your information
-1. [`docs`](docs) folder: [edit `index.md`](index.md) with your own images and links
+1. [`docs`](docs) folder: [edit `_config.yml`](docs/_config.yml) with your information
+1. [`docs`](docs) folder: [edit `index.md`](docs/index.md) with your own images and links
 1. Go into your repo's Settings and publish to Github Pages from `master branch /docs folder`
 
 And you're done! Your website will be live at: `<yourusername>.github.io/<repositoryname>`
 
 **Customizing Further:**
 - [`docs/media`](docs/media) folder: [replace `favicon.ico`, `apple-touch-...`, and the two `android-chrome-...`](https://favicon.io/favicon-converter/) with [your own logo](https://unsplash.com)
-- [`docs`](docs) folder: [update `_config.yml`](_config.yml) with siteNav links to use extra pages
+- [`docs`](docs) folder: [update `_config.yml`](docs/_config.yml) with siteNav links to use extra pages
 - [Set a custom domain](https://help.github.com/en/github/working-with-github-pages/about-custom-domains-and-github-pages) or [download to selfhost](https://github.com/coffeebank/moonrise/archive/master.zip) ([needs Jekyll](https://jekyllrb.com))
 
 
