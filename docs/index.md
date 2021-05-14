@@ -5,14 +5,14 @@ navname: Home
 # Cells at the bottom of the page
 cellLinks:
   - cname: Server Map
-    curl: https://unsplash.com/photos/52gEprMkp7M
+    curl: map
     cimage: media/demo02.jpg
 
   - cname: Screenshots
-    curl: https://unsplash.com/photos/lS2HIgvF-80
+    curl: screenshots
     cimage: media/demo03.jpg
 
   - cname: Donate
-    curl: https://unsplash.com/photos/ZVprbBmT8QA
+    curl: about
     cimage: media/demo04.jpg
 ---

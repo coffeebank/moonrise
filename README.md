@@ -27,7 +27,10 @@ The quickest way to get up and running is to use GitHub Pages (free).
 1. Click "Fork" on the top right corner
 1. Invite [Widgetbot](https://widgetbot.io) into your Discord server, and [get your Server ID and Channel ID](https://www.youtube.com/watch?v=6dqYctHmazc) to show on your website
 1. `docs` folder: edit `_config.yml` with your information
+1. `docs` folder: upload general images into `media` folder
 1. `docs` folder: edit `index.md` with your own images and links
+1. `docs` folder: edit `about.md` with your Legal info
+1. `docs` folder: upload screenshots into `screenshots` folder
 
 Finally, you're ready to publish your site:
 1. Click the "Settings" tab
@@ -59,6 +62,7 @@ Contributions are welcome, with all code falling under this LICENSE.
 #### Assets
 - https://clipboardjs.com/
 - https://fonts.google.com/specimen/Jost
+- https://github.com/ghosh/micromodal
 - https://github.com/penibelst/jekyll-compress-html
 - https://www.gradientmagic.com/
 - https://jekyllrb.com/
@@ -75,6 +79,8 @@ Contributions are welcome, with all code falling under this LICENSE.
 - https://unsplash.com/photos/ZVprbBmT8QA
 
 #### Inspiration
+- https://codepen.io/charles1971/pen/BayGZBK
+- https://medium.com/@jkohne/responsive-design-and-css-columns-using-sass-15b477a4ff83
 - https://www.tjvantoll.com/2015/09/13/fetch-and-errors/
 - https://www.w3schools.com/howto/howto_css_animate_buttons.asp
 - https://www.w3schools.com/howto/howto_js_snackbar.asp

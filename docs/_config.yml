@@ -31,6 +31,8 @@ discordChannelID: 450428756855750666
 #   - name: Server Map
 #     url: map
 #     newtab: true
+#   - name: Screenshots
+#     url: screenshots
 #   - name: About
 #     url: about
 
