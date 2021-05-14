@@ -9,7 +9,7 @@ Features:
 - Shows a channel from your Discord server on the homepage
 - Changes color when Minecraft server is detected to be offline
 - Click to copy server IP
-- Screenshots modal popup (coming soon)
+- Screenshots page (coming soon)
 - Progressive Web App (coming soon)
 
 <br />
