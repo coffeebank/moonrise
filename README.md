@@ -22,8 +22,6 @@ Demo: https://coffeebank.github.io/moonrise
 
 ## Getting Started
 
-**Simple:**
-
 The quickest way to get up and running is to use GitHub Pages (free).
 
 1. Click "Fork" on the top right corner
@@ -34,15 +32,15 @@ The quickest way to get up and running is to use GitHub Pages (free).
 Finally, you're ready to publish your site:
 1. Click the "Settings" tab
 1. Change the `Repository name` to the website link you want
-1. On the left sidebar, click "Pages"
-  - Source: `master` branch, `/docs` folder, click "Save"
+1. On the left sidebar, click "Pages", Source: `master` branch, `/docs` folder, click "Save"
 
-And you're done! Your website will be live at: `<username>.github.io/<repositoryname>`
+And you're done! Your website will be live at: `https://<username>.github.io/<repositoryname>`
 
-**Customizing Further:**
-- `docs/media` folder: [replace `favicon.ico`, `apple-touch-...`, and the two `android-chrome-...`](https://favicon.io/favicon-converter/) with [your own logo](https://unsplash.com)
-- `docs` folder: [update `_config.yml`](docs/_config.yml) with siteNav links to use extra pages
-- [Get a free custom domain](https://js.org), [set a custom domain](https://help.github.com/en/github/working-with-github-pages/about-custom-domains-and-github-pages) or [download to selfhost](https://github.com/coffeebank/moonrise/releases)
+[Wiki: For advanced users, site navigation, and other features >](https://github.com/coffeebank/moonrise/wiki)
+
+## Updates
+
+To get new moonrise updates synced to your website, go to your repo, and click "Fetch upstream"
 
 
 ## License
