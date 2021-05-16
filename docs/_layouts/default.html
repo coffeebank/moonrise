@@ -93,7 +93,7 @@ layout: compress
 
     <div class="w-full pb-8 text-center" style="color:#888;">
         <a href="https://github.com/coffeebank/moonrise" rel="noopener" title="Moonrise by coffeebank">Powered by Moonrise</a> &middot; 
-        <a href="{% if site.siteFooterlink %}{{ site.siteFooterlink }}{% else %}about{% endif %}" rel="noopener" title="Legal">&copy; {{ site.siteYear }}<script>new Date().getFullYear()>{{ site.siteYear }}&&document.write("&#8208;"+new Date().getFullYear());</script> {{ site.serverName }}</a>
+        <a href="{% if site.siteFooterlink %}{{ site.baseurl }}{{ site.siteFooterlink }}{% else %}{{ site.baseurl }}/about{% endif %}" rel="noopener" title="Legal">&copy; {{ site.siteYear }}<script>new Date().getFullYear()>{{ site.siteYear }}&&document.write("&#8208;"+new Date().getFullYear());</script> {{ site.serverName }}</a>
     </div>
 
     {% if page.navname == "Home" %}

@@ -5,7 +5,7 @@ url: "https://coffeebank.github.io"
 baseurl: "/moonrise"
 siteIcon: /media/android-chrome-192x192.png
 siteYear: 2020
-siteFooterlink: about
+siteFooterlink: /about
 showinSearchEngines: true
 # googleAnalyticsID: (uncomment to use)
 
