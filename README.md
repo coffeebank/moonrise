@@ -9,7 +9,7 @@ Features:
 - Shows a channel from your Discord server on the homepage
 - Changes color when Minecraft server is detected to be offline
 - Click to copy server IP
-- Screenshots page (coming soon)
+- Screenshots page
 - Progressive Web App (coming soon)
 
 <br />
@@ -26,11 +26,9 @@ The quickest way to get up and running is to use GitHub Pages (free).
 
 1. Click "Fork" on the top right corner
 1. Invite [Widgetbot](https://widgetbot.io) into your Discord server, and [get your Server ID and Channel ID](https://www.youtube.com/watch?v=6dqYctHmazc) to show on your website
-1. `docs` folder: edit `_config.yml` with your information
-1. `docs` folder: upload general images into `media` folder
-1. `docs` folder: edit `index.md` with your own images and links
-1. `docs` folder: edit `about.md` with your Legal info
-1. `docs` folder: upload screenshots into `screenshots` folder
+1. Edit `_config.yml` with your information, using `media` folder for logos/assets
+1. Edit `index.md`, `about.md`, `map.md`, and `donate.md` with your info
+1. Screenshots page will autofill with pics in the `screenshots` folder
 
 Finally, you're ready to publish your site:
 1. Click the "Settings" tab

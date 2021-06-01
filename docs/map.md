@@ -1,4 +1,4 @@
 ---
 layout: redirect
-tourl: https://example.com
+tourl: https://github.com/webbukkit/dynmap/wiki
 ---

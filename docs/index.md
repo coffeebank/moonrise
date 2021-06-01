@@ -13,6 +13,6 @@ cellLinks:
     cimage: media/demo03.jpg
 
   - cname: Donate
-    curl: about
+    curl: donate
     cimage: media/demo04.jpg
 ---
