@@ -3,7 +3,11 @@
 
 :root {
     --text-color: #eee;
-    --text-light: #dbabab;
+    --text-light: #ccc;
+    --text-rounded: 0.65rem;
+    --text-mb: 1.65rem;
+    --button-bg: #444;
+    --button-bg-light: #555;
 }
 
 .layoutpage {
@@ -11,69 +15,135 @@
     width: 95%;
     max-width: 950px;
     font-size: 1.1rem;
+}
 
-    h1,h2,h3 {
-        padding-bottom: 1rem;
-    }
+// Fixes for the header and footer
 
-    p {
-        padding-bottom: 1rem;
-    }
+#serverStatus p {
+    padding: 0;
+}
 
-    a {
-        color: var(--text-light);
-        
-        &:hover {
-            color: var(--text-color);
-        }
-    }
+.layoutfooter, .layoutfooter a {
+    color: #888;
+}
 
-    h1 {
-        font-size: 2.5rem;
-        line-height: 3.5rem;
-        padding-top: 2.5rem;
-        font-weight: bold;
-    }
+// Page stylings
 
-    h2 {
-        font-size: 2rem;
-        padding-top: 1.5rem;
-        font-weight: bold;
-    }
+h1,h2,h3 {
+    padding-bottom: 1rem;
+}
 
-    h3 {
-        font-size: 1.65rem;
-        padding-top: 1.5rem;
-        font-weight: bold;
-    }
+p {
+    padding-bottom: 1rem;
+}
 
-    h4 {
-        font-size: 1.5rem;
-        padding-top: 1.5rem;
-    }
-
-    ul {
-        list-style-type: disc;
-    }
+a {
+    color: var(--text-light);
     
-    ol {
-        list-style-type: decimal;
+    &:hover {
+        color: var(--text-color);
+    }
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    padding-top: 2.5rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2rem;
+    padding-top: 1.5rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.65rem;
+    padding-top: 1.5rem;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ol, ul {
+    margin: 0;
+    padding: 1rem 2.5rem;
+    list-style-position: outside;
+
+    li {
+        padding-bottom: 0.5rem;
     }
 
     ol, ul {
-        margin: 0;
-        padding: 1rem 2.5rem;
-        list-style-position: outside;
+        padding-top: 0.5rem;
+        padding-bottom: 0px;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+}
 
-        li {
-            padding-bottom: 0.5rem;
-        }
+code { /* overridden by pre code */
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-size: 0.95em;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 0.25rem;
+}
 
-        ol, ul {
-            padding-top: 0.5rem;
-            padding-bottom: 0px;
-            padding-left: 2.5rem;
-            padding-right: 2.5rem;
-        }
+img {
+    border-radius: var(--text-rounded);
+}
+
+pre {
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: var(--text-rounded);
+    margin-bottom: var(--text-mb);
+    overflow-x: auto;
+
+    code {
+        margin: 0rem;
+        padding: 0rem;
+        background-color: transparent;
+        border-radius: 0rem;
+    }
+}
+
+.button {
+    background-color: var(--button-bg);
+    color: var(--text-color);
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s ease !important;
+    font-size: 1rem;
+    white-space: nowrap;
+    line-height: 3rem;
+    user-select: none;
+
+    &:hover {
+        background-color: var(--button-bg-light);
     }
 }
