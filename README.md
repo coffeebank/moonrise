@@ -37,7 +37,7 @@ Finally, you're ready to publish your site:
 
 And you're done! Your website will be live at: `https://<username>.github.io/<repositoryname>`
 
-[Wiki: For advanced users, site navigation, and other features >](https://github.com/coffeebank/moonrise/wiki)
+[Wiki: For custom domains, adding a site nav, CSS, and other features >](https://github.com/coffeebank/moonrise/wiki)
 
 ## Updates
 
