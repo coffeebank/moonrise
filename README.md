@@ -26,6 +26,7 @@ The quickest way to get up and running is to use GitHub Pages (free).
 
 1. Click "Use this template" near the "Code" button
 1. Invite [Widgetbot](https://widgetbot.io) into your Discord server, and [get your Server ID and Channel ID](https://www.youtube.com/watch?v=6dqYctHmazc) to show on your website
+
 In your repository,
 1. Edit `_config.yml` with your information, using `media` folder for logos/assets
 1. Edit `index.md`, `about.md`, `map.md`, and `donate.md` with your info
