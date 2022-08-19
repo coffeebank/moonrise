@@ -82,4 +82,5 @@ Contributions are welcome, with all code falling under this LICENSE.
 - https://www.tjvantoll.com/2015/09/13/fetch-and-errors/
 - https://www.w3schools.com/howto/howto_css_animate_buttons.asp
 - https://www.w3schools.com/howto/howto_js_snackbar.asp
+- https://www.scaler.com/topics/css/animation-css/
 
